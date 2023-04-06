@@ -11,7 +11,7 @@ var numberImg;
 
 
 
-for (var a=1; a<6 /*normally is 14*/; a++) {
+for (var a=1; a<14 /*normally is 14*/; a++) {
   for (var b=1; b<5; b++) {
     var c = [a, b];
     cards.push(c);
