@@ -258,8 +258,8 @@ function war(){
     //same thing again
     audio.play();
   }, 2000);
-  window.setTimeout(function() {
-  console.log("calling assign")
+  window.setTimeout(function( ){
+    console.log("calling assign")
     if (player1.length === 0) {
       $("#winner").html("Player Two");
     }
@@ -267,7 +267,7 @@ function war(){
       $("#winner").html("Player One");
     }
     assign();
-  }, 3000);
+  }, 2750)
 }
 //ends function war
 
