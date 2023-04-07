@@ -112,7 +112,7 @@ function assign(){
 
 
   if (suit1 === 1) {
-    suit1 = "<img src='resources/images/hearts.png'/>"
+    suit1 = "<img src='./resources/images/hearts.png'/>"
   }
   if (suit1 === 2) {
     suit1 = "<img src='../resources/images/diamonds.png'/>"
