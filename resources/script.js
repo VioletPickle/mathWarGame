@@ -112,28 +112,28 @@ function assign(){
 
 
   if (suit1 === 1) {
-    suit1 = "<img src='./resources/images/hearts.png'/>"
+    suit1 = "<img src='resources/images/hearts.png'/>"
   }
   if (suit1 === 2) {
-    suit1 = "<img src='../resources/images/diamonds.png'/>"
+    suit1 = "<img src='resources/images/diamonds.png'/>"
   }
   if (suit1 === 3) {
-    suit1 = "<img src='../resources/images/clubs.png'/>"
+    suit1 = "<img src='resources/images/clubs.png'/>"
   }
   if (suit1 === 4) {
-    suit1 = "<img src='../resources/images/spades.png'/>"
+    suit1 = "<img src='resources/images/spades.png'/>"
   }
   if (suit2 === 1) {
-    suit2 = "<img src='../resources/images/hearts.png'/>"
+    suit2 = "<img src='resources/images/hearts.png'/>"
   }
   if (suit2 === 2) {
-    suit2 = "<img src='../resources/images/diamonds.png'/>"
+    suit2 = "<img src='resources/images/diamonds.png'/>"
   }
   if (suit2 === 3) {
-    suit2 = "<img src='../resources/images/clubs.png'/>"
+    suit2 = "<img src='resources/images/clubs.png'/>"
   }
   if (suit2 === 4) {
-    suit2 = "<img src='../resources/images/spades.png'/>"
+    suit2 = "<img src='resources/images/spades.png'/>"
   }
 
   if (number1 < 11) {
@@ -142,7 +142,7 @@ function assign(){
       $('#player1-suit').append(suit1);
     }
   } else if (number1 === 11) {
-    var number1Img = "<img src='../resources/images/jack.png'/>"
+    var number1Img = "<img src='resources/images/jack.png'/>"
     
     for (var i = 0; i<number1; i++) {
       //console.log(i)
@@ -151,7 +151,7 @@ function assign(){
     
     $('#player1-number').html(number1Img);
   } else if (number1 === 12) {
-    var number1Img = "<img src='../resources/images/queen.png'/>"
+    var number1Img = "<img src='resources/images/queen.png'/>"
     
     for (var i = 0; i<number1; i++) {
       //console.log(i)
@@ -160,7 +160,7 @@ function assign(){
     
     $('#player1-number').html(number1Img);
   } else if (number1 === 13) {
-    var number1Img = "<img src='../resources/images/king.png'/>"
+    var number1Img = "<img src='resources/images/king.png'/>"
     
     for (var i = 0; i<number1; i++) {
       //console.log(i)
@@ -178,7 +178,7 @@ function assign(){
     }
   }
   else if (number2 === 11) {
-    var number2Img = "<img src='../resources/images/jack.png'/>"
+    var number2Img = "<img src='resources/images/jack.png'/>"
     
     for (var i = 0; i<number2; i++) {
       //console.log(i)
@@ -188,7 +188,7 @@ function assign(){
     $('#player2-number').html(number2Img);
   }
   else if (number2 === 12) {
-    var number2Img = "<img src='../resources/images/queen.png'/>"
+    var number2Img = "<img src='resources/images/queen.png'/>"
     
     for (var i = 0; i<number2; i++) {
       //console.log(i)
@@ -198,7 +198,7 @@ function assign(){
     $('#player2-number').html(number2Img);
   }
   else if (number2 === 13) {
-    var number2Img = "<img src='../resources/images/king.png'/>"
+    var number2Img = "<img src='resources/images/king.png'/>"
     
     for (var i = 0; i<number2; i++) {
       //console.log(i)
@@ -241,11 +241,11 @@ function war(){
   $('#player1-suit').css("display", "none");
   $('#player2-suit').css("display", "none");
 
-  numberImg = "<img style='height: 14rem;' src='../resources/images/cardBack.png'/>"
+  numberImg = "<img style='height: 14rem;' src='resources/images/cardBack.png'/>"
   $("#player1-number").html(numberImg);
   $("#player2-number").html(numberImg);
   
-  var audio = new Audio("../resources/card.mp3");
+  var audio = new Audio("resources/card.mp3");
   //creates a variable that holds the sound of a card
   audio.play();
   //plays the sound
@@ -436,7 +436,7 @@ $('#draw').on('click', function() {
     $('#player1-suit').css("display", "none");
     $('#player2-suit').css("display", "none");
 
-    numberImg = "<img style='height: 14rem;' src='../resources/images/cardBack.png'/>"
+    numberImg = "<img style='height: 14rem;' src='resources/images/cardBack.png'/>"
     $("#player1-number").html(numberImg)
     $("#player2-number").html(numberImg)
   }
