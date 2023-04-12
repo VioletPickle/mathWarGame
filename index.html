@@ -12,44 +12,80 @@
 </head>
 
 <body>
-  <div id="practice"></div>
+  <div class="flex" style="justify-content: center; padding-left: 5pt;">
+    <div id="reset" class="button">Reset the game</div>
+  </div>
+  
+  <div class="flex-column" id="directions">
+    <p id="compareDirections" class="hidden">Choose which card has the larger amount.</p>
+    <p id="addDirections" class="hidden">Add the card amounts together.</p>
+    <p id="divideDirections" class="hidden">Divide Player One's number by Player Two's number.</p>
+    <p id="multiplyDirections" class="hidden">Multiply the card amounts together.</p>
+    <p id="subtractDirections" class="hidden">Subract Player One's number by Player Two's number.</p>
+    <p id="integerDirections" class="hidden">Black is positive. Red is negative.</p>
+  </div>
   
   <div id="game-screen" class="flex-column">
     <div id="game-header" class="flex-column">
       <div>
-        <h1 id="war">WAR!</h1>
+        <h1 id="winner">WAR!</h1>
       </div>
-      <div id="info" class="flex">
+      <div id="info" class="flex justifyEvenly">
         <div class="player-count info">Player one has <span id="player1-count"></span> cards.</div>
 
-        <div class="info" id="whoWins">The winner is <span id="winner"></span></div>
+        <input class="info" value="answer"></input>
 
         <div class="player-count info">Player two has <span id="player2-count"></span> cards.</div>
       </div>
     </div><!--ends id game-header-->
-    <div id="game-box" class="flex">
+    <div id="game-box" class="flex justifyEvenly">
       <div id="player1" class="player">
         <div class="player-name">Player One</div>
         <div class="card flex-column">
           <div id="player1-number" class="number"><img style='height: 14rem;' src='./resources/images/cardBack.png'/></div>
           
-          <div id="player1-suit" class="suit flex">
-           
-          </div>
+          <div id="player1-suit" class="suit flex"></div>
+
+          <div class="hidden compareCards" id="winner1">Winner</div>
         </div>
       </div><!--ends id player1-->
       
-      <div id="draw">Draw</div>
+      <div class="flex-column" id="buttonDiv">
+        <div id="draw" class="button">Draw</div>
+
+        <div id="mathDiv">
+          <div id="mathOpTitle">
+            <h2 id="mathOptions">Math Options</h2>
+          </div>
+          <div id="options" class="hidden flex justifyEvenly">
+            <button id="compare" class="button">Compare</button>
+            <button id="arithmetic" class="button"> Arithmetic</button>
+          </div><!--ends id options-->
+        </div><!--ends id mathDiv-->
+        <div class="flex justifyEvenly hidden" id="math">
+          <span id="add" class="button">Add</span>
+          <span id="subtract" class="button">Subtract</span>
+          <span id="multiply" class="button">Multiply</span>
+          <span id="divide" class="button">Divide</span>
+        </div>
+        <h2 class="flex-column button hidden" style="height: fit-content; border:none;" id="integer">
+          Integers?
+          <div class="flex justifyEvenly">
+            <span id="yes" class="button">Yes</span>
+            <span id="no" class="button">No</span>
+          </div>
+        </h2>
+      </div><!--ends id buttonDiv-->
       
       <div id="player2" class="player">
         <div class="player-name">Player Two</div>
-        <span class="card flex-column">
+        <div class="card flex-column">
           <div id="player2-number" class="number"><img style='height: 14rem;' src='./resources/images/cardBack.png'/></div>
           
-          <div id="player2-suit" class="suit flex">
-            
-          </div>
-        </span>
+          <div id="player2-suit" class="suit flex"></div>
+
+          <div class="hidden compareCards" id="winner2">Winner</div>
+        </div>
       </div><!--ends id player2-->
     </div><!--ends id game-box-->
   </div><!--ends id game-screen-->
